@@ -1,4 +1,4 @@
-const API_URL = "https://gopratle-project-1.onrender.com";
+const API_URL = "https://gopratle-project-2.onrender.com";
 
 export async function createRequirement(payload) {
   const res = await fetch(`${API_URL}/api/requirements`, {
