@@ -51,8 +51,7 @@ const CATEGORY_DETAIL_KEYS = {
   crew: ["crewType", "crewCount", "workingHours", "crewBudget", "responsibilities"],
 };
 
-// checks the current step's required fields and returns an
-// error message string, or "" if everything needed is filled in
+
 function validateStep(step, data) {
   if (step === 1) {
     if (!data.eventName.trim()) return "Please enter an event name.";
@@ -142,9 +141,7 @@ function App() {
   };
 
   const handleSubmit = async () => {
-    // one last check across every required field before we actually
-    // post to the backend, in case something got cleared after
-    // going back and forth between steps
+  
     for (let s = 1; s <= 3; s++) {
       const error = validateStep(s, data);
       if (error) {
