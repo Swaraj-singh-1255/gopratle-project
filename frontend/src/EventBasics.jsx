@@ -23,7 +23,7 @@ export default function EventBasics({ data, onChange }) {
         Tell us about the event
       </h2>
       <p className="mt-1.5 text-[15px] text-gray-500">
-        The basics first — we'll get into specifics next.
+        The basics first we'll get into specifics next.
       </p>
 
       <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
